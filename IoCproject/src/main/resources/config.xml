@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           C:/Users/pc/eclipse-workspace/IoCproject/src/main/resources/spring-beans.xsd.xml">
+
+   
+
+    <bean id="dao" class="dao.UserDaoImpl" />
+     <bean id="service" class="service.UserServiceImpl">
+     <property name="dao" ref="d"></property>
+    </bean>
+    
+</beans>
